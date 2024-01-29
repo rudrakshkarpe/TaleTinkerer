@@ -5,5 +5,5 @@ This Flask project implements an interactive storytelling application powered by
 
 |  |  |
 |---------|---------|
-| ![Image_1](/GenAI/Tales_GPT/app/src/image_1.png) | ![Image_2](/GenAI/Tales_GPT/app/src/image_2.png) |
-| ![Alt text](/GenAI/Tales_GPT/app/src/image_3.png) | ![Alt text](/GenAI/Tales_GPT/app/src/image_4.png) |
+| ![Image_1](app/src/image_1.png) | ![Image_2](app/src/image_2.png) |
+| ![Alt text](app/src/image_3.png) | ![Alt text](app/src/image_4.png) |
