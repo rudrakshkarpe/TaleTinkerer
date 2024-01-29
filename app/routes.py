@@ -1,5 +1,3 @@
-# my_project/app/routes.py
-
 from flask import render_template, request, session
 from app import app
 import openai
