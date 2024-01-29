@@ -29,7 +29,7 @@ def chat_interaction(input_text, message_history, role="user"):
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    title = "Tales of GPT"
+    title = "TaleTinkerer"
     button_messages = {}
     button_states = {}
 
