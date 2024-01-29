@@ -39,6 +39,20 @@ This project implements an interactive storytelling application powered by the O
 👉 **Engage with the Story:**
    - Follow the on-screen instructions to engage with the interactive story.
    - Make choices and enjoy the dynamically generated responses by the OpenAI GPT-3.5 Turbo model.
+
+🚀 **Setup using Docker:**
+  - Build the Docker image: 
+    ``` bash
+    docker build -t taletinkerer:latest .
+    ```
+
+  - Run the Docker container: 
+    ``` bash
+    docker run -d -p 5001:5001 taletinkerer
+    ```
+
+
+
 </details>
 
 <details>
