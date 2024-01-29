@@ -52,3 +52,12 @@ This project implements an interactive storytelling application powered by the O
 | ![Image](https://github.com/rudrakshkarpe/TaleTinkerer/assets/78851635/a2da2221-73c3-41c5-abaa-31b174131577) | ![Image](https://github.com/rudrakshkarpe/TaleTinkerer/assets/78851635/2f78bc09-fef1-4b7a-bb47-fc198819ea23) |
 
 </details>
+
+
+<details>
+<summary>✅ Todo List:</summary>
+ 
+ - [ ] Wishper Integration 
+ - [ ] Fix response waiting time
+ - [ ] Explore huggingface, midjouney integrations 
+</details>
