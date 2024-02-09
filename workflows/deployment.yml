@@ -16,8 +16,10 @@ spec:
     spec:
       containers:
       - name: tale-tinkerer
-        image: python:3.9.13
-        workingDir: /usr/src/app
+        # image: python:3.9.13
+        # workingDir: /usr/src/app
+        image: docker.io/rudrakshkarpe/tale-tinkerer:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5001
 ---
