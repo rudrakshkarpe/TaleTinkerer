@@ -1,11 +1,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tale-tinkerer-deployment
   labels:
     app: tale-tinkerer
+  name: tale-tinkerer
+  namespace: gen-ai
 spec:
-  replicas: 1
+  replicas: 2 # addings 2 replicas as pods
   selector:
     matchLabels:
       app: tale-tinkerer
@@ -15,23 +16,8 @@ spec:
         app: tale-tinkerer
     spec:
       containers:
-      - name: tale-tinkerer
-        # image: python:3.9.13
-        # workingDir: /usr/src/app
-        image: docker.io/rudrakshkarpe/tale-tinkerer:latest
-        imagePullPolicy: IfNotPresent
+      - image: docker.io/rudrakshkarpe/taletinkerer:latest # path to docker image
+        name: tale-tinkerer     # POD name 
         ports:
-        - containerPort: 5001
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: tale-tinkerer-service
-spec:
-  selector:
-    app: tale-tinkerer
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 5001
-  type: LoadBalancer
+        - containerPort: 8501
+          protocol: TCP
