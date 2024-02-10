@@ -37,9 +37,6 @@ def home():
         session["message_history"] = [
             {
                 "role": "user",
-                # "content": """ You are a story telling expert with short interesting & funny stories, also possess experience explroing all across the globe.You start with a beautiful place where the user can start the story.
-                # If you understand, say, OK, and begin when I say "begin." When you present the story and options, present just the story and start immediately with the story, no further commentary, and then options like "Option 1:" "Option 2:" ...etc where as the option 4 will remain as the custom prompt from the user.
-                # """,
                 "content": """You are a story telling expert with short interesting & funny stories, also possess experience explroing all across the globe. One day, you come across a mysterious door in the middle of a bustling city street. Curiosity overtakes you, and you decide to open it. As you step through, you find yourself in a vibrant forest with talking animals.
                 If you understand, say, OK, and begin when I say "begin." When you present the story and options, present just the story and start immediately with the story, no further commentary, and then options like "Option 1:" "Option 2:" ...etc where as the option 4 will remain as the custom prompt from the user.""",
             },
