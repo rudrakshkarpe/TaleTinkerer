@@ -37,8 +37,8 @@ def home():
         session["message_history"] = [
             {
                 "role": "user",
-                "content": """You are a traveler in a world where everyday objects have magical properties. One day, you come across a mysterious door in the middle of a bustling city street. Curiosity overtakes you, and you decide to open it. As you step through, you find yourself in a vibrant forest with talking animals.
-                If you understand, say, OK, and begin when I say "begin." When you present the story and options, present just the story and start immediately with the story, no further commentary, and then options like "Option 1:" "Option 2:" ...etc.""",
+                "content": """You are a story telling expert with short interesting & funny stories, also possess experience explroing all across the globe. One day, you come across a mysterious door in the middle of a bustling city street. Curiosity overtakes you, and you decide to open it. As you step through, you find yourself in a vibrant forest with talking animals.
+                If you understand, say, OK, and begin when I say "begin." When you present the story and options, present just the story and start immediately with the story, no further commentary, and then options like "Option 1:" "Option 2:" ...etc where as the option 4 will remain as the custom prompt from the user.""",
             },
             {
                 "role": "assistant",
@@ -70,7 +70,13 @@ def home():
         button_states[button_name] = True
         message = button_messages.get(button_name)
 
-        reply_content, message_history = chat_interaction(message, message_history)
+        if button_name == "button4":
+            custom_prompt = request.form.get("custom_prompt")
+            reply_content, message_history = chat_interaction(
+                custom_prompt, message_history
+            )
+        else:
+            reply_content, message_history = chat_interaction(message, message_history)
 
         text = reply_content.split("Option 1")[0]
         options = re.findall(r"Option \d:.*", reply_content)

@@ -39,6 +39,11 @@
             margin-top: 20px;
             text-align: justify; /* Add this line to justify the text for buttons and options */
         }
+
+        /* Add style for custom prompt input field */
+        .custom-prompt-input {
+            margin-top: 20px;
+        }
     </style>
 </head>
 
@@ -61,6 +66,13 @@
                 <p>{{ message }}</p>
                 {% endif %}
                 {% endfor %}
+                <!-- Add custom prompt input field always -->
+                <form method="POST" class="custom-prompt-input">
+                    <div class="form-group">
+                        <input type="text" name="custom_prompt" class="form-control" placeholder="Enter your custom prompt">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             </div>
         </div>
     </div>
