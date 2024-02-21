@@ -64,7 +64,8 @@ def home():
 
     if request.method == "POST":
         message_history = session["message_history"]
-        button_messages = session["button_messages"]
+        button_messages = session
+        
 
         button_name = request.form.get("button_name")
         button_states[button_name] = True
@@ -74,6 +75,7 @@ def home():
             custom_prompt = request.form.get("custom_prompt")
             reply_content, message_history = chat_interaction(
                 custom_prompt, message_history
+                
             )
         else:
             reply_content, message_history = chat_interaction(message, message_history)
