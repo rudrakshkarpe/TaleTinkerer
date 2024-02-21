@@ -71,7 +71,7 @@ This project implements an interactive storytelling application powered by the O
 <details>
 <summary>✅ Todo List:</summary>
  
- - [ ] Wishper Integration 
+ - [ ] [Wishper](https://openai.com/research/whisper) Integration 
  - [ ] Fix response waiting time
  - [ ] Explore huggingface, midjouney integrations 
 </details>
