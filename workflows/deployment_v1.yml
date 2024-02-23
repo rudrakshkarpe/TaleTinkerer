@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
         - name: tale-tinkerer
-          image: docker.io/rudrakshkarpe/tale-tinkerer
+          image: docker.io/rudrakshkarpe/taletinkerer
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5001
