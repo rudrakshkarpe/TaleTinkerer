@@ -8,4 +8,4 @@ EXPOSE 5001
 
 ENV NAME TaleTinkerer
 
-CMD ["python", "run.py"]
+CMD ["python3", "run.py"]
